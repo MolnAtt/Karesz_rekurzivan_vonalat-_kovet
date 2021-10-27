@@ -49,14 +49,7 @@ namespace Karesz
             Állj_irányba(-irany);
             return false;
         }
-        bool Rekurzív_Kavicskövetés()
-        {
-            return Próbálkozzunk(előre) || Próbálkozzunk(jobbra) || Próbálkozzunk(balra); // VAGY! Mert ha az egyik igaz, nem próbálkozik tovább. 
-        }
-
-        void FELADAT()
-        {
-            Rekurzív_Kavicskövetés();
-        }     
+        bool Rekurzív_Kavicskövetés() => Próbálkozzunk(előre) || Próbálkozzunk(jobbra) || Próbálkozzunk(balra); // VAGY! Mert ha az egyik igaz, nem próbálkozik tovább. 
+        void FELADAT() => Rekurzív_Kavicskövetés();
     }
 }
